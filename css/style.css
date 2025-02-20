@@ -70,8 +70,8 @@ header {
 .navbar li a {
     text-decoration: none;
     color: #000;
-    font-size: 18px;
-    padding: 5px 7px;
+    font-size: 19px;
+    padding: 5px 5px;
     transition: color 0.3s;
 }
 
@@ -138,7 +138,7 @@ nav ul li a::after {
     position: absolute;
     background-color: rgb(255, 0, 0);
     width: 0;
-    height: 1.43px;
+    height: 1.5px;
     transition: all 0.3s ease;
 }
 
@@ -158,7 +158,7 @@ nav ul li a span.right {
     position: absolute;
     background-color: rgb(255, 0, 0);
     height: 0;
-    width: 1.43px;
+    width: 1.5px;
     transition: all 0.3s ease;
 }
 
@@ -182,7 +182,7 @@ nav ul li a:hover::after {
 
 nav ul li a:hover span.left,
 nav ul li a:hover span.right {
-    height: 101%;
+    height: 100%;
     word-spacing: 10px;
 }
 
@@ -199,7 +199,7 @@ nav ul li a:hover span.right {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 0 15px;
-    width: 280px;
+    width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     justify-content: space-between;
@@ -232,7 +232,7 @@ nav ul li a:hover span.right {
     padding-bottom: 10px;
 }
 
-.dropdown-column ul {
+.dropdown-column ul li{
     list-style: none;
     margin: 0;
     padding: 0;
@@ -266,7 +266,7 @@ nav ul li a:hover{
 .announcement-bar {
     background-color: #000;
     color: #fff;
-    padding: 8px 20px;
+    padding: 7px 15px;
     text-align: center;
     position: relative;
     width: 100%;
@@ -284,7 +284,6 @@ nav ul li a:hover{
     color: #ffcf60;
     text-decoration: none;
     position: relative;
-    font-size: 18px;
     transition: transform 0.1s ease-in-out;
 }
 
@@ -300,13 +299,14 @@ nav ul li a:hover{
     transform-origin: center;
 }
 
+.announcement-bar a:hover {
+    transform: scaleX(1.2);
+}
+
 .announcement-bar:hover span {
     transform: translateX(-5px);
 }
 
-.announcement-bar a:hover {
-    transform: scaleX(1.2);
-}
 .main-section {
     display: flex;
     justify-content: flex-start;
@@ -340,24 +340,24 @@ nav ul li a:hover{
 }
 
 .description {
-    font-size: 17px;
+    font-size: 18px;
     margin-bottom: 50px;
     line-height: 1.6;
+    word-spacing: 1px;
     color: #676666;
 }
 
 .shop-now-button {
-    padding: 20px 30px;
+    padding: 17px 20px;
     background-color: #000000;
     color: #dfdede;
     text-decoration: none;
-    font-size: 20px;
-    /* font-weight: bold; */
+    font-size: 22px;
     font-family: Arial, sans-serif;
 }
 
 .shop-now-button:hover {
-    background-color: #d4d0d0;
+    background-color: #c4bfbf;
     color: #000;
     border: 1px solid #000;
 }
@@ -365,7 +365,7 @@ nav ul li a:hover{
 .image-section {
     display: flex;
     justify-content: space-between;
-    margin: 50px 60px;
+    margin: 60px 60px 30px;
 }
 
 .image-container {
@@ -580,30 +580,30 @@ nav ul li a:hover{
 }
 
 .div1-icons i {
-    font-size: 28px;
+    font-size: 30px;
     display: flex;
     color: #333;
     transition: color 0.3s, background-color 0.3s;
     height: 100%;
     width: 34%;
-    line-height: 1.5;
+    line-height: 1.4;
     text-align: center;
 }
 
 .div1-icons .cart{
-    padding-left: 5px;
+    padding-left: 6px;
 }
 .div1-icons .heart{
-    padding-left: 9px;
+    padding-left: 11px;
 }
 .div1-icons .search{
-    padding-left: 9px;
+    padding-left: 11px;
 }
 
 .div1-icons i:hover {
     color: rgb(175, 174, 174);
     background-color: #f25a2c;
-    transition: 0.5s;
+    transition: 0.6s;
 }
 
 .div1:hover .div1-back,
@@ -658,7 +658,7 @@ nav ul li a:hover{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-    margin: 100px auto;
+    margin: 80px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-top: 2px solid rgb(183, 181, 181);
     border-bottom: 2px solid rgb(183, 181, 181);
@@ -733,18 +733,18 @@ nav ul li a:hover{
 .you-may-like{
     width: 85%;
     margin-left: 7%;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 .you-may-like-container{
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 40px;
     gap: 15px;
 }
 
 .you-may-like h2{
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
 }
 
@@ -760,7 +760,7 @@ nav ul li a:hover{
 .div4-front-4 {
     position: relative;
     background-size: cover;
-    height: 350px;
+    height: 400px;
 }
 
 .div1-front-1 {
@@ -826,44 +826,7 @@ nav ul li a:hover{
     color: tomato;
     transition: 0.5s;
 }
-.div2-icons {
-    background-color: #fff;
-    width: 50%;
-    height: 40px;
-    position: absolute;
-    bottom: 40px;
-    left: 25%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.div2-icons i {
-    font-size: 28px;
-    display: flex;
-    color: #333;
-    transition: color 0.3s, background-color 0.3s;
-    height: 101%;
-    width: 34%;
-    line-height: 1.5;
-    text-align: center;
-}
-
-.div2-icons .cart{
-    padding-left: 5px;
-}
-.div2-icons .heart{
-    padding-left: 9px;
-}
-.div2-icons .search{
-    padding-left: 9px;
-}
-
-.div2-icons i:hover {
-    color: rgb(175, 174, 174);
-    background-color: #f25a2c;
-    transition: 0.6s;
-}
 
 .latest-news{
     background-color: #7be4db17;
@@ -926,7 +889,7 @@ img:hover{
 }
 
 .news-item a:hover {
-    transform: scale(1.1);
+    transform: scale(1.13);
 }
 .news-item:hover h3{
     color: #ff3d00;
